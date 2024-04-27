@@ -1,0 +1,70 @@
+﻿@page 
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Fruits</h1>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <form method="post">
+                <input type="date" asp-for="FilterDate" />
+                <button type="submit">Filter By After Pick Date</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var fruit in Model.FilteredFruits)
+        {
+            <div class="col-3">
+                <div class="tile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="@fruit.Image" height="150" width="150" />
+                            </div>
+                            <div class="col-8">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <strong>Weight:</strong> &nbsp;
+                                            @fruit.Weight LBs
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <strong>Color:</strong> &nbsp;
+                                            <input type="color" value="@Model.ToHex(fruit.Color)" disabled />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <strong>Price:</strong> &nbsp;
+                                            $ @fruit.Price
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <strong>Date Picked:</strong> &nbsp;
+                                            <input type="date" value="@fruit.DatePicked.ToString("yyyy-MM-dd")" disabled />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <strong>Has Seeds:</strong> &nbsp;
+                                            <input type="checkbox" checked="@fruit.HasSeeds" disabled />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

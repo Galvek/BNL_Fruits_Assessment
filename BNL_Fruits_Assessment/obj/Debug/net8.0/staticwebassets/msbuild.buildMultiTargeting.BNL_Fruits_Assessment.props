@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BNL_Fruits_Assessment.props" />
+</Project>
