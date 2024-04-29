@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\BNL_Fruits_Assessment.props" />
-</Project>
