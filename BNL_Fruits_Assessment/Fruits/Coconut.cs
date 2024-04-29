@@ -6,7 +6,7 @@ namespace BNL_Fruits_Assessment.Fruits
     {
         public Coconut()
         {
-            Weight = 2.00;
+            Weight = 32;
             Color = Color.Tan;
             Price = 2.99M;
             DatePicked = new DateTime(2024, 07, 15);

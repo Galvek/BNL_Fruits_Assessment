@@ -82,5 +82,21 @@ namespace BNL_Fruits_Assessment.Pages
         {
             return $"#{c.R:X2}{c.G:X2}{c.B:X2}";
         }
+
+        public string WeightToUI(double weight)
+        {
+            string uom;
+            if (weight > 16)
+            {
+                uom = "LBS";
+                weight /= 16;
+            }
+            else
+            {
+                uom = "OZ";
+            }
+
+            return weight + " " + uom;
+        }
     }
 }

@@ -6,7 +6,7 @@ namespace BNL_Fruits_Assessment.Fruits
     {
         public Apple()
         {
-            Weight = 0.65;
+            Weight = 10.4;
             Color = Color.Red;
             Price = 1.25M;
             DatePicked = new DateTime(2023, 10, 01);

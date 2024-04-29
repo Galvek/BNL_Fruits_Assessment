@@ -10,10 +10,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 text-center">
-            <form method="post">
-                <input type="date" asp-for="FilterDate" />
-                <button type="submit">Filter By After Pick Date</button>
-            </form>
+            <div class="title">
+                <form method="post">
+                    <input type="date" asp-for="FilterDate" />
+                    <button type="submit">Filter By After Pick Date</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -24,15 +26,15 @@
                 <div class="tile">
                     <div class="container">
                         <div class="row">
-                            <div class="col-4">
-                                <img src="@fruit.Image" height="150" width="150" />
+                            <div class="col-5">
+                                <img src="@fruit.Image" height="150" width="200" />
                             </div>
-                            <div class="col-8">
+                            <div class="col-7">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12">
                                             <strong>Weight:</strong> &nbsp;
-                                            @fruit.Weight LBs
+                                            @Model.WeightToUI(fruit.Weight)
                                         </div>
                                     </div>
                                     <div class="row">

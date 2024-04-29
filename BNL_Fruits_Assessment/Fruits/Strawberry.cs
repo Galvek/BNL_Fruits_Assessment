@@ -6,7 +6,7 @@ namespace BNL_Fruits_Assessment.Fruits
     {
         public Strawberry()
         {
-            Weight = 0.05;
+            Weight = 0.8;
             Color = Color.Red;
             Price = 3.99M;
             DatePicked = DateTime.Now;

@@ -6,7 +6,7 @@ namespace BNL_Fruits_Assessment.Fruits
     {
         public Kiwi()
         {
-            Weight = 0.15;
+            Weight = 2.4;
             Color = Color.Green;
             Price = 0.99M;
             DatePicked = DateTime.Now;

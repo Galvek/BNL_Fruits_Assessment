@@ -6,7 +6,7 @@ namespace BNL_Fruits_Assessment.Fruits
     {
         public Cherry()
         {
-            Weight = 0.01;
+            Weight = 0.16;
             Color = Color.Red;
             Price = 0.05M;
             DatePicked = new DateTime(2023, 07, 01);
