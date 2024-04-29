@@ -11,12 +11,6 @@
 .vs/BNL_Fruits_Assessment/v17/DocumentLayout.json
 .vs/ProjectEvaluation/bnl_fruits_assessment.metadata.v7.bin
 .vs/ProjectEvaluation/bnl_fruits_assessment.projects.v7.bin
-BNL_Fruits_Assessment/bin/Debug/net8.0/appsettings.Development.json
-BNL_Fruits_Assessment/bin/Debug/net8.0/appsettings.json
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.deps.json
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.dll
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.exe
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.pdb
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.runtimeconfig.json
-BNL_Fruits_Assessment/bin/Debug/net8.0/BNL_Fruits_Assessment.staticwebassets.runtime.json
+BNL_Fruits_Assessment/bin
 /.vs
+/BNL_Fruits_Assessment/obj
