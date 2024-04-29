@@ -2,7 +2,7 @@
 
 namespace BNL_Fruits_Assessment.Fruits
 {
-    public abstract class Fruit
+    public abstract class Fruit : IFruit
     {
         /// <summary>
         /// Weight in LBs (pounds)

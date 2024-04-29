@@ -28,3 +28,4 @@ D:\BNL_Fruits_Assessment\BNL_Fruits_Assessment\obj\Debug\net8.0\refint\BNL_Fruit
 D:\BNL_Fruits_Assessment\BNL_Fruits_Assessment\obj\Debug\net8.0\BNL_Fruits_Assessment.pdb
 D:\BNL_Fruits_Assessment\BNL_Fruits_Assessment\obj\Debug\net8.0\BNL_Fruits_Assessment.genruntimeconfig.cache
 D:\BNL_Fruits_Assessment\BNL_Fruits_Assessment\obj\Debug\net8.0\ref\BNL_Fruits_Assessment.dll
+D:\BNL_Fruits_Assessment\BNL_Fruits_Assessment\obj\Debug\net8.0\BNL_Fruits_Assessment.sourcelink.json

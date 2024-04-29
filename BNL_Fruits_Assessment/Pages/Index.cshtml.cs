@@ -7,10 +7,10 @@ using System.Drawing;
 
 namespace BNL_Fruits_Assessment.Pages
 {
-    public class IndexModel : PageModel
+    public class IndexModel(IMemoryCache memoryCache, ILogger<IndexModel> logger) : PageModel
     {
-        private readonly IMemoryCache _memoryCache;
-        private readonly ILogger<IndexModel> _logger;
+        private readonly IMemoryCache _memoryCache = memoryCache;
+        private readonly ILogger<IndexModel> _logger = logger;
 
         private List<Fruit> Fruits { get; set; } = [];
         public List<Fruit> FilteredFruits { get; set; } = [];
@@ -18,17 +18,11 @@ namespace BNL_Fruits_Assessment.Pages
         [BindProperty]
         public DateOnly FilterDate { get; set; }
 
-        public IndexModel(IMemoryCache memoryCache, ILogger<IndexModel> logger)
-        {
-            _memoryCache = memoryCache;
-            _logger = logger;
-        }
-
         public void OnGet()
         {
             FilterDate = new DateOnly(2023, 01, 01);
-            Fruits = new List<Fruit>()
-            {
+            Fruits =
+            [
                 //ripe banana
                 new Banana()
                 {
@@ -64,7 +58,7 @@ namespace BNL_Fruits_Assessment.Pages
                 new Coconut(),
                 new Strawberry(),
                 new Kiwi()
-            };
+            ];
 
             FilteredFruits.AddRange(Fruits);
 
